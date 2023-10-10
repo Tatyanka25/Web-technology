@@ -1,0 +1,89 @@
+<HTML lang="en">
+
+  <HEAD>
+     <META charset="UTF-8">
+    <TITLE>Числа</TITLE>
+  </HEAD>
+
+  <BODY bgcolor="#8b008b" text="white">
+
+    <H1>Сумма четных чисел</H1>
+    <HR>
+   <SCRIPT language=JavaScript>
+   <!--
+     // Проверка num на целое число из [a,b]
+     // Возвращает true, если num хорошее,
+     // false - в противном случае.
+     function IsNum(num, a, b)
+     {
+       var ret = true; // возвращаемое значение
+       // проверка на пустую строку
+       if (num == "") ret = false;
+       else // проверка на цифры
+         for(var i=0; i<num.length; i++)
+           if(num.charAt(i)<"0" || num.charAt(i)>"9") {ret=false; break;}
+       // проверка на интервал
+       if (ret) ret = a<=parseInt(num,10) && parseInt(num,10)<=b;
+       return ret;
+     }
+
+     // Игра сумма четных чисел
+     function FindNum()
+     {
+       var a = 1;      // начало интервала
+       var b = 50;     // конец интервала
+       var answer = 0; // ответ пользователя
+       var summa = 0;   // сумма четных чисел
+       var k = 0;
+       var hod = 0;
+       alert ("Введи любое число, входящее в итервал от "+ a +" до "+ b +"!");
+
+       // цикл игры
+       while (hod != 5)
+       {
+          // ввод числа пользователЯ
+          answer = prompt("Число в ["+a+" , "+b+"] Ваш ход:", "");
+
+          // проверка на досрочное окончание игры
+          if (answer == null) break;
+
+          // проверка достоверности введенных данных
+
+          if (IsNum(answer, a, b))
+          {
+            answer = parseInt(answer,10);
+            // анализ введенного пользователем числа
+            if      (answer % 2 == 0)
+               {alert("Ваше число принято!"); summa=summa+answer; k=k+1;}
+            else
+               {alert("Ваше число принято");summa=summa+0;}
+            // увеличиваем счетчик ответов на 1
+            hod++;
+          }
+          else
+          {
+            alert ("Ошибка при вводе числа");
+            answer = 0;
+            // Замечание. Некоторые браузеры выдают сообщение об ошибке
+            // при проверке answer != number, если answer - не число.
+            // ДлЯ подавлениЯ такого сообщениЯ использовано присваивание
+            // answer = 0;
+          }
+       }
+       // игра закончена
+       if (hod == 5)
+          alert("Вы ввели " + k + " четных чисел. И их сумма равна " + summa);
+     }
+
+     // Запуск игры
+     FindNum()
+
+    //-->
+   </SCRIPT>
+    <P>
+      Игра закончена!
+     </p>
+  </BODY>
+
+</HTML>
+</html>
