@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+    <link rel="stylesheet" href="./css/page_4.css">
+</head>
+<script>
+function plus(n) {
+ var cena=document.getElementById("cena_"+n);
+ var col=document.getElementById("col_"+n);
+ var cenap=document.getElementById("cenap_"+n);
+ var itog=document.getElementById("itog");
+
+ col.innerHTML=1+Number(col.innerHTML);
+ cenap.innerHTML=Number(cenap.innerHTML)+Number(cena.innerHTML);
+ itog.innerHTML=Number(itog.innerHTML)+Number(cena.innerHTML);
+}
+function minus(n) {
+ var cena=document.getElementById("cena_"+n);
+ var col=document.getElementById("col_"+n);
+ var cenap=document.getElementById("cenap_"+n);
+ var itog=document.getElementById("itog");
+
+ if(col.innerHTML!="0") {
+  col.innerHTML=Number(col.innerHTML)-1;
+  cenap.innerHTML=Number(cenap.innerHTML)-Number(cena.innerHTML);
+  itog.innerHTML=Number(itog.innerHTML)-Number(cena.innerHTML);
+
+ }
+}
+</script>
+<body>
+<header>
+    <div class="label" id="top">
+        <font face="ravie" color="black" size="5">CHEESE</font>
+        <div class="label_1"><img src="./photos/logo.jpg" width="100" height="100"></div>
+        <div class="label_2"><font face="ravie" color="black" size="5">TORT</font></div>
+    </div>
+    <div class="menu">
+        <menu>
+            <li><a href="KR_1.html" target="_self" class="link_1"><font face="cooper" color="black" size="5">ГЛАВНАЯ</font></a></li>
+            <li><a href="KR_1_page_4.html" target="_self" class="link_1"><font face="cooper" color="black" size="5"><img src="./photos/map_znak.png" width="15" height="15"><b>ЧИЗКЕЙКИ</b></font></a></li>
+            <li><a href="KR_1_page_3.html" target="_self" class="link_1"><font face="cooper" color="black" size="5">О НАС</font></a></li>
+            <li><a href="KR_1_page_2.html" target="_self" class="link_1"><font face="cooper" color="black" size="5">КОНТАКТЫ</font></a></li>
+            <li><a href="KR_1_page_3.html#map" target="_self" class="link_1"><font face="cooper" color="black" size="5">КАРТА</font></a></li>
+        </menu>
+    </div>
+</header>
+<div><a class="label_3" href="https://scimmy.ru/" target="_blank"><font face="cooper" color="black" size="6.5">+79105678845</font></a></div>
+<table cellspacing="0" cellpadding="0" border="0" width="1800" align="center">
+    <tr>
+        <td align="center" width="300" height="70px">Товар</td>
+        <td align="center" width="600">Фото</td>
+        <td align="center" width="200">Цена</td>
+        <td align="center" width="350">Количество</td>
+        <td align="center" width="350">Итоговая стоимость</td>
+    </tr>
+    <tr>
+        <td align="center">Шоколадный чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_1.jpg" width="300" height="200"></td>
+        <td align="center"><b id="cena_1">480</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(1)">[+]</b> <b id="col_1">0</b> шт. <b class="plus_minus" onclick="minus(1)">[-]</b></td>
+        <td align="center"><b id="cenap_1">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Малиновый чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_2.jpeg" width="300" height="200"></td>
+        <td align="center"><b id="cena_2">290</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(2)">[+]</b> <b id="col_2">0</b> шт. <b class="plus_minus" onclick="minus(2)">[-]</b></td>
+        <td align="center"><b id="cenap_2">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Черничный чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_3.jpeg" width="300" height="200"></td>
+        <td align="center"><b id="cena_3">360</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(3)">[+]</b> <b id="col_3">0</b> шт. <b class="plus_minus" onclick="minus(3)">[-]</b></td>
+        <td align="center"><b id="cenap_3">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Ежевичный чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_4.jpg" width="300" height="200"></td>
+        <td align="center"><b id="cena_4">320</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(4)">[+]</b> <b id="col_4">0</b> шт. <b class="plus_minus" onclick="minus(4)">[-]</b></td>
+        <td align="center"><b id="cenap_4">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Чизкейк "Филадельфия"</td>
+        <td align="center"><img src="photos/cheese_cake_5.jpg" width="300" height="200"></td>
+        <td align="center"><b id="cena_5">410</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(5)">[+]</b> <b id="col_5">0</b> шт. <b class="plus_minus" onclick="minus(5)">[-]</b></td>
+        <td align="center"><b id="cenap_5">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Чизкейк с рикоттой</td>
+        <td align="center"><img src="photos/cheese_cake_6.jpg" width="300" height="200"></td>
+        <td align="center"><b id="cena_6">350</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(6)">[+]</b> <b id="col_6">0</b> шт. <b class="plus_minus" onclick="minus(6)">[-]</b></td>
+        <td align="center"><b id="cenap_6">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Японский хлопковый чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_7.png" width="300" height="200"></td>
+        <td align="center"><b id="cena_7">430</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(7)">[+]</b> <b id="col_7">0</b> шт. <b class="plus_minus" onclick="minus(7)">[-]</b></td>
+        <td align="center"><b id="cenap_7">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Веганский чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_8.jpeg" width="300" height="200"></td>
+        <td align="center"><b id="cena_8">440</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(8)">[+]</b> <b id="col_8">0</b> шт. <b class="plus_minus" onclick="minus(8)">[-]</b></td>
+        <td align="center"><b id="cenap_8">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Чизкейк по-чикагски</td>
+        <td align="center"><img src="photos/cheese_cake_9.jpeg" width="300" height="200"></td>
+        <td align="center"><b id="cena_9">260</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(9)">[+]</b> <b id="col_9">0</b> шт. <b class="plus_minus" onclick="minus(9)">[-]</b></td>
+        <td align="center"><b id="cenap_9">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td align="center">Австрийский чизкейк</td>
+        <td align="center"><img src="photos/cheese_cake_10.jpg" width="300" height="200"></td>
+        <td align="center"><b id="cena_10">300</b> руб.</td>
+        <td align="center"><b class="plus_minus" onclick="plus(10)">[+]</b> <b id="col_10">0</b> шт. <b class="plus_minus" onclick="minus(10)">[-]</b></td>
+        <td align="center"><b id="cenap_10">0</b> руб.</td>
+    </tr>
+    <tr>
+        <td colspan="5">ИТОГО: <b id="itog">0</b></td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <h1 align="center">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <fieldset>
+                    <p><input type="hidden" name="q" value="search"></p>
+                    <legend>КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+                    <p>Имя<input id="name" name="name" size=20 type="Text" value="Иван" class="figure"></p>
+                    <p>Сегодняшняя<br>дата<input id="date" name="date" type="date" value="01.11.2023" class="figure"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ</legend>
+                    <p>Возраст <input name="age" size=20 type="Number" value="0" class="figure"></p>
+                    <p>Пароль <input name="password" size="20" type="password" value="password" class="figure"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>ДОСТАВКА</legend>
+                    <p>Способ доставки<br><br>
+                        <input checked name="delivery" type="Radio" value="Курьером">Курьером<br>
+                        <input name="delivery" type="Radio" value="Самовывоз из магазина">Самовывоз из магазина<br>
+                        <input name="delivery" type="Radio" value="Самовывоз из пункта выдачи">Самовывоз из пункта выдачи<br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>ОПЛАТА</legend>
+                    <p>Способ<br>оплаты
+                        <select name="pay" class="figure">
+                            <OPTION value="Наличными">Наличными</OPTION>
+                            <OPTION value="Оплата онлайн">Оплата онлайн</OPTION>
+                            <option value="Оплата по QR коду">Оплата по QR коду</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>ПОДАРОК</legend>
+                    <p>Выберите все подарки, которые хотите от нас получить<br><br>
+                    <input type="checkbox" name="gift_1" checked><label for="Сертификат на 100 рублей">Сертификат на 100 рублей</label><br>
+                    <input type="checkbox" name="gift_2"><label for="Брелок нашего магазина">Брелок нашего магазина</label><br>
+                    <input type="checkbox" name="gift_3"><label for="Скидка 5% на следующий заказ">Скидка 5% на следующий заказ</label>
+                    </p>
+                </fieldset>
+                <p align="center">
+                    <button name="submit" type="Submit" class="submit" value="submit">Оформить</button>
+                </p>
+            </form>
+        </td>
+    </tr>
+</table>
+<a href="#top" target="_self" class="on_top"><img src="./photos/top.png" width="100" height="160" alt=""></a>
+</body>
+</html>
