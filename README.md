@@ -1,3 +1,3 @@
 # Web-technology
 
-KR_1dop: https://tatyanka25.github.io/Web-technology/KR_1dop/algoritm_zadacha.html
+KR_1dop: https://tatyanka25.github.io/Web-technology/KR_1/KR_1.html
