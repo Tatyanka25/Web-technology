@@ -1,0 +1,91 @@
+body{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),url("/photos/background-image_4.jpg");
+    background-color: rgb(255, 255, 255, 0.67);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+header{
+    height: 100px;
+    background-color: white;
+    margin: 0;
+    position: static;
+}
+.label{
+    padding: 33px;
+    position: absolute;
+}
+.label_1{
+    margin-left: 150px;
+    margin-top: -65px;
+}
+.label_2{
+    margin-left: 280px;
+    margin-top: -71px;
+}
+menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0 25px;
+    line-height: 102px;
+    float: right;
+    margin-right: 270px;
+}
+menu li{
+    display: inline-block;
+    padding: 0 100px;
+    height: 100px;
+    margin: -10px;
+}
+menu li:hover{
+    font-weight: lighter;
+    transform: scale(1);
+    box-shadow: 2px 2px 5px black;
+}
+.label_3{
+    float: right;
+    margin-right: -1750px;
+    margin-top: -73px;
+    position: static;
+    text-decoration: none;
+}
+.link_1{
+    text-decoration: none;
+}
+p {
+    text-indent: 25px;
+    text-align: justify;
+    font-size: 30px;
+    color: black;
+}
+ol{
+    font-size: 30px;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    font-weight: bold;
+}
+.zakladka div{
+    display: inline-block;
+    padding: 0 80px;
+    font-size: 30px;
+}
+.zakladka_link{
+    color: black;
+    text-decoration: none;
+}
+.zakladka_link:hover{
+    color: white;
+}
+.on_top{
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+}
