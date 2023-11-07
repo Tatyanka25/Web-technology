@@ -1,0 +1,96 @@
+body{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),url("/photos/background-image_4.jpg");
+    background-color: rgb(255, 255, 255, 0.67);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+header{
+    height: 100px;
+    background-color: white;
+    margin: 0;
+    position: static;
+}
+.label{
+    padding: 33px;
+    position: absolute;
+}
+.label_1{
+    margin-left: 150px;
+    margin-top: -65px;
+}
+.label_2{
+    margin-left: 280px;
+    margin-top: -71px;
+}
+menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0 25px;
+    line-height: 102px;
+    float: right;
+    margin-right: 270px;
+}
+menu li{
+    display: inline-block;
+    padding: 0 100px;
+    height: 100px;
+    margin: -10px;
+}
+menu li:hover{
+    font-weight: lighter;
+    transform: scale(1);
+    box-shadow: 2px 2px 5px black;
+}
+.label_3{
+    float: right;
+    margin-right: -1750px;
+    margin-top: -73px;
+    position: static;
+    text-decoration: none;
+}
+.link_1{
+    text-decoration: none;
+}
+.plus_minus{
+    cursor: pointer;
+}
+td{
+    font-size: 30px;
+}
+table{
+    margin-top: 50px;
+}
+fieldset legend{
+    font: 25pt/0 'Averia Serif Libre';
+    margin-left: 10px; /* to center */
+    padding: 0 4px;
+    color: #690949fe;
+}
+p {
+    padding-top: 10px;
+    margin: 40px;
+    color: black;
+    font-size: 30px;
+}
+fieldset {
+    padding:10px;
+    border:2px solid #690949fe;
+    margin:20px;
+    border-radius: 20px;
+    background-color: #ffffffbd;
+}
+.figure {
+    position: absolute;
+    left: 460px;
+    font-size: 30px;
+}
+select {
+    position: absolute;
+    left: 200px;
+}
